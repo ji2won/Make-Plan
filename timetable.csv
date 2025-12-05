@@ -1,0 +1,17 @@
+,월,화,수,목,금,토,일
+9:00,True,False,True,False,True,False,False
+10:00,True,True,True,True,True,False,False
+11:00,True,True,True,True,True,False,False
+12:00,True,True,True,True,True,False,False
+13:00,True,True,True,True,False,False,False
+14:00,True,True,True,True,False,False,False
+15:00,False,True,False,True,False,False,False
+16:00,False,True,False,True,False,False,False
+17:00,False,True,False,True,False,False,False
+18:00,False,True,False,True,False,False,False
+19:00,False,True,False,True,False,False,False
+20:00,False,True,False,True,False,False,False
+21:00,False,True,False,True,False,False,False
+22:00,False,True,False,True,False,False,False
+23:00,False,False,False,False,False,False,False
+24:00,False,False,False,False,False,False,False
