@@ -107,8 +107,11 @@ $$Score = \frac{Weight \times 100}{Days\_Left + 1}$$
 
 ## 📸 스크린샷
 
+<img width="2624" height="1120" alt="image" src="https://github.com/user-attachments/assets/9c225139-18cb-48da-b6d6-aae635c9ac9a" />
 - **Tab 1:** 시간표 입력 화면
+<img width="1318" height="1306" alt="image" src="https://github.com/user-attachments/assets/f8190cb1-b2e8-41a7-b2c3-8fa95c9ee76a" />
 - **Tab 2:** 과업 분석 및 제안 화면
+<img width="1606" height="1268" alt="image" src="https://github.com/user-attachments/assets/b5f18fb6-b798-4c65-8a84-f475a822089f" />
 - **Tab 3:** 최종 스케줄링 결과 화면
 
 ---
