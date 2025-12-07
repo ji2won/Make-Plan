@@ -129,32 +129,24 @@ $$Score = \frac{Weight \times 100}{Days\_Left + 1}$$
 
 ## 📸 스크린샷
 
-\<div align="center"\>
-\<img src="https://github.com/user-attachments/assets/9c225139-18cb-48da-b6d6-aae635c9ac9a" width="300"\>
-\</div\>
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/9c225139-18cb-48da-b6d6-aae635c9ac9a" width="300">
+</div>
 
 - **Tab 1:** 시간표 입력 화면
 
-\<div align="center"\>
-\<img src="https://github.com/user-attachments/assets/f8190cb1-b2e8-41a7-b2c3-8fa95c9ee76a" width="300"\>
-\</div\>
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/f8190cb1-b2e8-41a7-b2c3-8fa95c9ee76a" width="300">
+</div>
 
 - **Tab 2:** 과업 분석 및 제안 화면
 
-\<div align="center"\>
-\<img src="https://github.com/user-attachments/assets/b5f18fb6-b798-4c65-8a84-f475a822089f" width="300"\>
-\</div\>
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/b5f18fb6-b798-4c65-8a84-f475a822089f" width="300">
+</div>
 
 - **Tab 3:** 최종 스케줄링 결과 화면
 
 ---
 
 **Developed by Min jiwon** _2025 Web Python Programming Project_
-
-```
-
-### ✨ 변경된 포인트
-1.  **설치 및 실행 방법 분리:** **[방법 1. 압축 파일 실행]**과 **[방법 2. Git Clone 실행]**으로 나누어, 교수님이 압축 파일을 풀어서 채점하실 때 헷갈리지 않도록 배려했습니다.
-2.  **경로 안내:** 압축을 풀고 나서 `cd` 명령어로 어느 폴더로 들어가야 하는지(`make_plan` 폴더 내 `pyproject.toml`이 있는 곳) 명시했습니다.
-3.  **명령어 통일:** 두 방법 모두 `poetry install` -> `poetry run ...` 순서로 동일하게 진행됨을 보여주어 혼란을 줄였습니다.
-```
