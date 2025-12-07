@@ -1,3 +1,12 @@
+제출용 압축 파일(`zip`)을 받았을 때의 실행 방법을 포함하여 `README.md`의 **[🚀 설치 및 실행 방법]** 섹션을 수정해 드립니다.
+
+교수님이나 조교님이 채점할 때 **Git을 쓰지 않고 바로 압축을 풀어서 실행하는 경우**를 고려한 버전입니다. 아래 내용을 기존 README의 해당 부분에 덮어씌우시면 됩니다.
+
+---
+
+### ✅ 수정된 `README.md` (전체 복사해서 사용하세요)
+
+````markdown
 # 🚀 MakePlan: 지능형 학업 스케줄러
 
 > **"계획 회피를 멈추고, 실행에 집중하세요."**
@@ -13,7 +22,7 @@
 
 ### 🌌 Key Features
 
-1.  **지능형 과업 분할 :** "전공 과제"만 선택하면, [자료조사 -\> 구현 -\> 테스트]와 같은 세부 실행 단계와 소요 시간을 자동으로 제안합니다.
+1.  **지능형 과업 분할 :** "전공 과제"만 선택하면, [자료조사 -> 구현 -> 테스트]와 같은 세부 실행 단계와 소요 시간을 자동으로 제안합니다.
 2.  **우선순위 자동 스케줄링 :** 마감일과 중요도를 계산하여, 공강 시간에 과제를 최적 배치합니다.
 3.  **인터랙티브 시간표 관리:** 엑셀처럼 클릭하여 자신의 수업 시간과 빈 시간을 직관적으로 설정하고 저장합니다.
 4.  **동기 부여 UI :** 우주를 테마로 한 몰입형 디자인과 시각적인 진행률 표시로 사용자의 흥미를 유발합니다.
@@ -44,26 +53,39 @@
 
 ## 🚀 설치 및 실행 방법
 
-이 프로젝트는 **Poetry**를 사용하여 패키지를 관리합니다.
+이 프로젝트는 **Poetry**를 사용하여 패키지 및 가상환경을 관리합니다.
+실행 전 Python과 Poetry가 설치되어 있어야 합니다.
 
-### 1\. 저장소 클론
+### 방법 1. 압축 파일(Zip) 제출본 실행 시 (권장)
+
+1.  제출된 `PRJ8_2024105532_민지원.zip` 파일의 압축을 해제합니다.
+2.  터미널(CMD, PowerShell, Mac Terminal)을 열고 압축 해제된 폴더(`make_plan`)로 이동합니다.
+    _(주의: `pyproject.toml` 파일이 있는 위치여야 합니다)_
+    ```bash
+    cd 경로/PRJ8_2024105532_민지원/make_plan
+    ```
+3.  아래 명령어들을 순서대로 입력하여 의존성 설치 및 앱을 실행합니다.
+
+    ```bash
+    # 1. 의존성 패키지 설치
+    poetry install
+
+    # 2. 앱 실행
+    poetry run streamlit run src/make_plan/app.py
+    ```
+
+### 방법 2. Git Clone 실행 시
 
 ```bash
-git clone https://github.com/ji2won/Make-Plan.git
-cd make-plan
-```
+# 저장소 복제 및 이동
+git clone [https://github.com/ji2won/Make-Plan.git](https://github.com/ji2won/Make-Plan.git)
+cd Make-Plan
 
-### 2\. 의존성 설치
-
-```bash
+# 의존성 설치 및 실행
 poetry install
-```
-
-### 3\. 앱 실행
-
-```bash
 poetry run streamlit run src/make_plan/app.py
 ```
+````
 
 ---
 
@@ -72,10 +94,11 @@ poetry run streamlit run src/make_plan/app.py
 **Bottom-up 방식**으로 설계되어, 데이터와 로직이 철저히 분리된 모듈형 구조를 갖추고 있습니다.
 
 ```
-make-plan/
+Make-Plan/
 ├── src/
 │   └── make_plan/
 │       ├── app.py          # [View] Streamlit 메인 실행 파일 (UI 및 이벤트 처리)
+│       ├── main.py         # [View] UI 없이 로직 실행 파일
 │       ├── logic.py        # [Controller] 과업 분할 및 시간 계산 핵심 로직
 │       ├── scheduler.py    # [Model] 우선순위 알고리즘 및 시간표 데이터 관리
 │       └── data.py         # [DB] 과업 유형별 템플릿 및 휴리스틱 데이터
@@ -107,10 +130,32 @@ $$Score = \frac{Weight \times 100}{Days\_Left + 1}$$
 
 ## 📸 스크린샷
 
+\<div align="center"\>
+\<img src="https://github.com/user-attachments/assets/9c225139-18cb-48da-b6d6-aae635c9ac9a" width="300"\>
+\</div\>
+
 - **Tab 1:** 시간표 입력 화면
+
+\<div align="center"\>
+\<img src="https://github.com/user-attachments/assets/f8190cb1-b2e8-41a7-b2c3-8fa95c9ee76a" width="300"\>
+\</div\>
+
 - **Tab 2:** 과업 분석 및 제안 화면
+
+\<div align="center"\>
+\<img src="https://github.com/user-attachments/assets/b5f18fb6-b798-4c65-8a84-f475a822089f" width="300"\>
+\</div\>
+
 - **Tab 3:** 최종 스케줄링 결과 화면
 
 ---
 
 **Developed by Min jiwon** _2025 Web Python Programming Project_
+
+```
+
+### ✨ 변경된 포인트
+1.  **설치 및 실행 방법 분리:** **[방법 1. 압축 파일 실행]**과 **[방법 2. Git Clone 실행]**으로 나누어, 교수님이 압축 파일을 풀어서 채점하실 때 헷갈리지 않도록 배려했습니다.
+2.  **경로 안내:** 압축을 풀고 나서 `cd` 명령어로 어느 폴더로 들어가야 하는지(`make_plan` 폴더 내 `pyproject.toml`이 있는 곳) 명시했습니다.
+3.  **명령어 통일:** 두 방법 모두 `poetry install` -> `poetry run ...` 순서로 동일하게 진행됨을 보여주어 혼란을 줄였습니다.
+```
